@@ -40,7 +40,7 @@ namespace RecentItemsDisplay
             {
                 if (locpmt.Location is ItemChanger.Locations.StartLocation)
                 {
-                    DisplaySource = "Start";
+                    DisplaySource = "开局";
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace RecentItemsDisplay
         {
             if (string.IsNullOrEmpty(DisplayMessage))
             {
-                return string.IsNullOrEmpty(DisplaySource) ? DisplayName : DisplayName + "\nfrom " + DisplaySource;
+                return string.IsNullOrEmpty(DisplaySource) ? DisplayName : DisplayName + "\n来自 " + DisplaySource;
             }
             else
             {

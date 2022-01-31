@@ -41,21 +41,21 @@ namespace RecentItemsDisplay
             switch (scene)
             {
                 // We can treat shops and scenes with just an NPC as special cases
-                case SceneNames.Room_mapper: return "Iselda";
-                case SceneNames.Room_shop: return "Sly";
-                case SceneNames.Room_Charm_Shop: return "Salubra";
-                case SceneNames.Fungus2_26: return "Leg Eater";
-                case SceneNames.Crossroads_38: return "Grubfather";
-                case SceneNames.RestingGrounds_07: return "Seer";
-                case SceneNames.Room_Ouiji: return "Jiji";
-                case SceneNames.Room_Jinn: return "Jinn";
-                case SceneNames.Grimm_Divine: return "Divine";
+                case SceneNames.Room_mapper: return "伊塞尔达";
+                case SceneNames.Room_shop: return "斯莱";
+                case SceneNames.Room_Charm_Shop: return "萨鲁巴";
+                case SceneNames.Fungus2_26: return "食腿者";
+                case SceneNames.Crossroads_38: return "虫爷爷";
+                case SceneNames.RestingGrounds_07: return "先知";
+                case SceneNames.Room_Ouiji: return "吉吉";
+                case SceneNames.Room_Jinn: return "吉恩";
+                case SceneNames.Grimm_Divine: return "迪万";
                 // Forward compatibility
-                case SceneNames.Room_nailsmith: return "Nailsmith";
-                case SceneNames.Room_Mask_Maker: return "Mask Maker";
+                case SceneNames.Room_nailsmith: return "钉子匠";
+                case SceneNames.Room_Mask_Maker: return "面具制作师";
                 case SceneNames.Room_Tram:
                 case SceneNames.Room_Tram_RG:
-                    return "Tram";
+                    return "电车";
 
                 default:
                     if (sceneToArea.TryGetValue(scene, out string area))
