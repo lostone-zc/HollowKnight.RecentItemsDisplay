@@ -46,16 +46,16 @@ namespace RecentItemsDisplay
 
             entries.Add(new IMenuMod.MenuEntry()
             {
-                Name = "Show Display",
+                Name = "显示最近的物品",
                 Description = string.Empty,
-                Values = new string[] { "True", "False" },
+                Values = new string[] { "开", "关" },
                 Saver = opt => GS.ShowDisplay = opt == 0,
                 Loader = () => GS.ShowDisplay ? 0 : 1
             });
 
             entries.Add(new IMenuMod.MenuEntry()
             {
-                Name = "Max Displayable Items",
+                Name = "显示物品数量的最大值",
                 Description = string.Empty,
                 Values = Enumerable.Range(1, Display.MaxDisplayableItems).Select(x => x.ToString()).ToArray(),
                 Saver = opt => GS.MaxItems = opt + 1,
@@ -64,18 +64,18 @@ namespace RecentItemsDisplay
 
             entries.Add(new IMenuMod.MenuEntry()
             {
-                Name = "Hide Display While Paused",
+                Name = "暂停时隐藏最近物品显示",
                 Description = string.Empty,
-                Values = new string[] { "True", "False" },
+                Values = new string[] { "开", "关" },
                 Saver = opt => GS.HideDisplayWhilePaused = opt == 0,
                 Loader = () => GS.HideDisplayWhilePaused ? 0 : 1
             });
 
             entries.Add(new IMenuMod.MenuEntry()
             {
-                Name = "Show Refreshed Items",
-                Description = "Toggle whether to send items to the display when it's not your first time picking them up",
-                Values = new string[] { "True", "False" },
+                Name = "显示再次刷新的物品",
+                Description = "控制是否显示你不是第一次捡起的物品",
+                Values = new string[] { "开", "关" },
                 Saver = opt => GS.ShowRefreshedItems = opt == 0,
                 Loader = () => GS.ShowRefreshedItems ? 0 : 1
             });
