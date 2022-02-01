@@ -24,7 +24,7 @@ namespace RecentItemsDisplay
 
             Object.DontDestroyOnLoad(canvas);
 
-            CanvasUtil.CreateTextPanel(canvas, "Recent Items", 24, TextAnchor.MiddleCenter,
+            CanvasUtil.CreateTextPanel(canvas, "最近的物品", 32, TextAnchor.MiddleCenter,
                 new CanvasUtil.RectData(new Vector2(200, 100), Vector2.zero,
                 RecentItems.GS.AnchorPoint + new Vector2(-0.025f, 0.05f), 
                 RecentItems.GS.AnchorPoint + new Vector2(-0.025f, 0.05f)));
@@ -64,7 +64,7 @@ namespace RecentItemsDisplay
                     new CanvasUtil.RectData(new Vector2(50, 50), Vector2.zero, new Vector2(-0.1f, 0.5f),
                         new Vector2(-0.1f, 0.5f)));
             }
-            CanvasUtil.CreateTextPanel(basePanel, msg, 24, TextAnchor.MiddleLeft,
+            CanvasUtil.CreateTextPanel(basePanel, msg, 26, TextAnchor.MiddleLeft,
                 new CanvasUtil.RectData(new Vector2(400, 100), Vector2.zero,
                 new Vector2(1.1f, 0.5f), new Vector2(1.1f, 0.5f)),
                 CanvasUtil.GetFont("Perpetua"));
