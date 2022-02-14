@@ -1,4 +1,4 @@
-﻿using ItemChanger;
+using ItemChanger;
 using MonoMod.ModInterop;
 using UnityEngine;
 

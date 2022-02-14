@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MonoMod.ModInterop;
 
 // Replace the namespace with your project's root namespace
